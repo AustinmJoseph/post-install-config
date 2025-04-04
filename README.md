@@ -16,44 +16,111 @@ This tutorial outlines the how to configure osTicket and go over a few terms we 
 
 - Windows 10</b> (21H2)
 
-<h2>Post-Install Configuration Objectives</h2>
+<h2>osTicket Admin Panel Configuration Lab</h2>
 
-Now that we have installed and got the the admin panel let configure it. 
+Now that we have installed osTicket and accessed the admin panel, let’s configure it.
 
-If you havent installed osTicket please refer to my [osTicket installation Lab](https://github.com/AustinmJoseph/ostiket-prereqs).
+If you haven't installed osTicket yet, please refer to my osTicket installation lab.
 
-Lets fogin into the admin panel with our admin account first. 
+1. Log into the Admin Panel
+Log in with your admin account first. Once logged in, click on the Admin Panel. You will notice many additional options appear.
 
-When you first log in click the admin panel you can see that alot more things pop up. 
+2. Create Roles and Groups
+We will begin by creating roles that define different access levels for different groups. Groups are used to assign permissions to different people.
 
-To start off we are going to make a few roles that give different levels of acces to different groups, groups give permisions to different people within the group.
+Create a Role:
 
-we are going to make a group called system admins and give them all permissions.
+Go to Admin Panel → Manage → Roles.
 
-now we will go to the departments panel and make one called sys admins.
+Create a new role called System Admins and give them all permissions.
 
-now switch to teams we are going to name this one Shield and create. Teams pull agents from different departmants to the same team.
+Create a Group:
 
-For this lab we want anyone to be able to registar tickets so go to settings > Users > and make sure the box is unchecked.
+Go to Admin Panel → Manage → Groups.
 
-now we will make some workers/agents. Go to agents  and click agents, then make a random email make sure to record this information I named my first agent Gwen Stacy, i gave gwen the superior adnmin role access and and put her on team Shield.
-Then I made another agent named Harry Osborn and only gave him  the support role and view access for this lab. 
+Create a group called System Admins and assign the System Admins role to this group.
 
-Now that we have made agents we can make a USer.
+3. Create a Department
+Next, let's create a department for system admins.
 
-go to the top right and click gent panel, then go to users and create a new user i name mine Norman osborn. we will only make a single user for now.
+Go to Admin Panel → Manage → Departments.
 
-now we are going to g back into the admin panel to configure SLA's, SLA's give the agent a notice on how quickly a ticket should be handled.
+Create a new department called Sys Admins.
 
-we are going to create 3 SLA's
+4. Create a Team
+Teams allow you to pull agents from different departments into one team.
 
-SEV-A - really nad
-SEV-B - not as bad
-SEV-C - not terrible
+Go to Admin Panel → Manage → Teams.
 
-now we are going to make Help topics. Help Topics help users create tickets/ gives users a direction when creating one. Go to manage >Help Topics > and create a new help topic. I made 4 help topics Personal Computer with report a problem, Equipment request with General inquiry,
+Create a team called Shield.
 
-This Lab is a prequisit to my next lab to practice using the ticketing system.
+5. Adjust Ticket Registration Settings
+For this lab, we want everyone to be able to register tickets.
+
+Go to Admin Panel → Settings → Users.
+
+Make sure the box labeled "Allow users to register tickets" is unchecked.
+
+6. Create Agents
+Now we will create a few agents (workers) to assign roles and teams.
+
+Go to Admin Panel → Manage → Agents.
+
+Click on Agents and add a new agent.
+
+Agent 1:
+
+Name: Gwen Stacy
+
+Role: Superior Admin (full access)
+
+Team: Shield
+
+Agent 2:
+
+Name: Harry Osborn
+
+Role: Support (view access only)
+
+Team: Shield
+
+Make sure to record the email addresses for these agents, as they will be required for login.
+
+7. Create a User
+Now, let's create a user for ticket submission.
+
+Go to the top-right corner and click on Agent Panel.
+
+Navigate to Users and click Add New User.
+
+Create a user with the name Norman Osborn (for this lab, we’ll create just one user).
+
+8. Configure SLA (Service Level Agreements)
+SLAs are used to notify agents how quickly a ticket should be handled.
+
+Go to Admin Panel → Manage → SLA.
+
+Create the following 3 SLAs:
+
+SEV-A: Critical – needs immediate attention
+
+SEV-B: Medium priority
+
+SEV-C: Low priority
+
+9. Create Help Topics
+Help Topics guide users when they create tickets, directing them toward the correct category.
+
+Go to Admin Panel → Manage → Help Topics.
+
+Create the following Help Topics:
+
+Personal Computer (with the sub-topic Report a Problem)
+
+Equipment Request (with the sub-topic General Inquiry)
+
+Conclusion
+This lab is a prerequisite for the next lab, where we will practice using the ticketing system. Follow these steps to set up your admin panel, roles, groups, agents, and SLAs in preparation for the next steps
 
 
 
