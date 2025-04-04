@@ -3,12 +3,8 @@
 </p>
 
 <h1>osTicket - Post-Install Configuration</h1>
-This tutorial outlines the post-install configuration of the open-source help desk ticketing system osTicket.<br />
+This tutorial outlines the how to configure osTicket and go over a few terms we might see in the work force.<br />
 
-
-<h2>Video Demonstration</h2>
-
-- ### [YouTube: How To Configure osTicket, post-installation](https://www.youtube.com)
 
 <h2>Environments and Technologies Used</h2>
 
@@ -22,34 +18,43 @@ This tutorial outlines the post-install configuration of the open-source help de
 
 <h2>Post-Install Configuration Objectives</h2>
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+Now that we have installed and got the the admin panel let configure it. 
 
-<h2>Configuration Steps</h2>
+If you havent installed osTicket please refer to my [osTicket installation Lab](https://github.com/AustinmJoseph/ostiket-prereqs).
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+Lets fogin into the admin panel with our admin account first. 
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+When you first log in click the admin panel you can see that alot more things pop up. 
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+To start off we are going to make a few roles that give different levels of acces to different groups, groups give permisions to different people within the group.
+
+we are going to make a group called system admins and give them all permissions.
+
+now we will go to the departments panel and make one called sys admins.
+
+now switch to teams we are going to name this one Shield and create. Teams pull agents from different departmants to the same team.
+
+For this lab we want anyone to be able to registar tickets so go to settings > Users > and make sure the box is unchecked.
+
+now we will make some workers/agents. Go to agents  and click agents, then make a random email make sure to record this information I named my first agent Gwen Stacy, i gave gwen the superior adnmin role access and and put her on team Shield.
+Then I made another agent named Harry Osborn and only gave him  the support role and view access for this lab. 
+
+Now that we have made agents we can make a USer.
+
+go to the top right and click gent panel, then go to users and create a new user i name mine Norman osborn. we will only make a single user for now.
+
+now we are going to g back into the admin panel to configure SLA's, SLA's give the agent a notice on how quickly a ticket should be handled.
+
+we are going to create 3 SLA's
+
+SEV-A - really nad
+SEV-B - not as bad
+SEV-C - not terrible
+
+now we are going to make Help topics. Help Topics help users create tickets/ gives users a direction when creating one. Go to manage >Help Topics > and create a new help topic. I made 4 help topics Personal Computer with report a problem, Equipment request with General inquiry,
+
+This Lab is a prequisit to my next lab to practice using the ticketing system.
+
+
+
+
